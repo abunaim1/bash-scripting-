@@ -45,3 +45,6 @@ flag:
 -w file_name = true if file_name is writable
 -x file_name = true if file_name is executable
 -s file_name = true if file_name is not empty (size > 0) 
+-q = this will quiet the printing of output of a command : grep -q "$pattern"
+-f = force remove a file 
+
