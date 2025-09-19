@@ -36,4 +36,19 @@ mv a.txt Codes :  move a.txt to Codes folder
 mv a.txt fun.txt : rename a.txt to fun.txt bcz fun.txt dosn't exist 
 head -n 3 : read first 3 line from top
 tail -n 2 :  read last 2 line from bottom
-head -n 3 | tail -n 1 : pipe (|) save ouptput from head and give it to the tail command
+head -n 3 | tail -n 1 : pipe (|), save ouptput from head and give it to the tail command.
+grep "the" a.txt : print the ouptput that is matched with "the" from this file
+grep "the" a.txt >> matched.txt : read "the" containing lien and save it to the matched.txt file
+
+
+Bash Scripting git:(main) ✗ grep "i" a.txt >> matched.txt
+➜  Bash Scripting git:(main) ✗ cat matched.txt 
+Twinle
+
+grep -w "the" a.txt : exactly match with "the" word.
+
+➜  Bash Scripting git:(main) ✗ head -n 2 a.txt | tail -n 1 | grep "you" 
+How I wonder what "you" are 
+
+rm matched.txt :  file delete
+rm -r demo :  directory delete
