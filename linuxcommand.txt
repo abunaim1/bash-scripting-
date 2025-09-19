@@ -1,0 +1,6 @@
+pwd 
+date
+ls
+mkdir demo
+touch a.txt
+cd 
