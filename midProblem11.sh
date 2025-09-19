@@ -51,9 +51,9 @@
 
 for file in * 
 do 
-    if [ "$file" == "users.txt" ]
+    if [ "$file" == "a.txt" ]
     then 
-        if [ $"(head -n 3 "$file" | tail -n 1 | grep -q "admin")" ]
+        if  head -n 3 "$file" | tail -n 1 | grep -q "admin"
         then 
             echo "Admin user found"
         else 
