@@ -4,3 +4,36 @@ ls
 mkdir demo
 touch a.txt
 cd 
+cd ..
+ls -1 : Showing by list
+ls -l : -rw-r--r--  1 abunaim  staff  60 Sep 19 21:06 linuxcommand.txt (Mac/Linux)
+
+d = directory/folder
+- = file 
+rwx = read, write, execute
+rwx = for group
+rwx = for others
+
+chmode a+x f1.c : giving execute (x) permission to all (a)
+➜  Bash Scripting git:(main) ✗ chmod a+x linuxcommand.txt 
+➜  Bash Scripting git:(main) ✗ ls -l
+-rwxr-xr-x  1 abunaim  staff  284 Sep 19 21:10 linuxcommand.txt
+
+
+➜  Bash Scripting git:(main) ✗ chmod a-x linuxcommand.txt 
+➜  Bash Scripting git:(main) ✗ ls -l
+-rw-r--r--  1 abunaim  staff  472 Sep 19 21:12 linuxcommand.txt
+
+
+cat a.txt : Showing the file content
+clear
+echo "Hello world" : for print in terminal
+echo "Hello World" > a.txt : write (overwrite) in file a.txt
+echo "Hello World" >> a.txt : write (append) in file a.txt
+cat a.txt >> cat b.txt : append content from a to b
+cp a.txt Demo : copy a.txt to Demo folder
+mv a.txt Codes :  move a.txt to Codes folder
+mv a.txt fun.txt : rename a.txt to fun.txt bcz fun.txt dosn't exist 
+head -n 3 : read first 3 line from top
+tail -n 2 :  read last 2 line from bottom
+head -n 3 | tail -n 1 : pipe (|) save ouptput from head and give it to the tail command
